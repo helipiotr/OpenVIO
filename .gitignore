@@ -1,0 +1,10 @@
+/software/.metadata
+/software/RemoteSystemsTempFiles
+/software/RPi/rpi_camera_sensor_data_mode/*.o
+/software/RPi/rpi_camera_sensor_data_mode/RPi_camera_sensor_data_mode.bin
+/software/RPi/rpi_camera_sensor_data_mode/measurements.bin
+/hardware/1.0/*
+/hardware/1.1/altium/History
+/hardware/1.1/altium/Project\ Logs for\ RPi_sensor_expansion_board/*
+/hardware/1.1/altium/Project\ Outputs\ for\ RPi_sensor_expansion_board/*
+/hardware/1.1/altium/__Previews/*
