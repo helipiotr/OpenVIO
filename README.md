@@ -18,7 +18,7 @@ The example software that was written with an intent to capture the raw data is 
 - BMA150 magnetometer
 
 # Getting the hardware
-It is possible to either use the attached Altium Designer files or use the generated Gerber files, depending on the preference. If some of the BOM are not easily accessible, please report this in issues and I'll consider replacing the component. Even better, consider contributing to the repository.
+It is possible to either use the attached Altium Designer files or use the generated Gerber files, depending on the preference. If some of the BOM are not easily accessible, please report this in issues and I'll consider replacing the component. Even better, consider contributing to the repository. 
 
 # Programming and development
 Before any programming, it is required to re-configure the pinout of the Raspberry Pi as described in [RPi_frame_sync](https://www.raspberrypi.org/forums/viewtopic.php?t=190314). Only after that RPi can be used with the sensor expansion board. GPU memory increase for the camera might be required for capturing the full sensor resolution, this can be done by changing a line in a configuration file.
@@ -30,6 +30,7 @@ Regarding the software embedded in STM32, AC6 development software is preffered 
 - The time synchronization is a bit off, this should be like 1ms but is actually closer to 0.991ms. Likely a timer issue.
 - The DMA that is being used for the communication between Raspberry Pi and STM32 is failing quite routinely. Maybe a change in protocol / communication paradigm (DMA timeouts?) will bring this to an end.
 - As DMA quite routinely fails, this messes up the timing data completely. Please don't be surprised if the saved binary blob contains nonsense, very often acceleration / angular velocity data is just fine with timing being just garbage.
+- Gyroscope in hardware version 1.2 is not yet supported, but the library can be easily added from the Bosch Sensortronic website. 
 
 # License
 All hardware must not be used for any activity other than academic or educational due to the licensing. Software that contains a copyright notice from Bosch Sensortec GmbH has to be distributed within the limits of this license. All other components are subject to the MIT license. 
